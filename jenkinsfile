@@ -3,13 +3,13 @@ node {
        git url: 'https://github.com/prahask1996/E-Commerce.git'
    }
    stage('Install node modules'){
-       sh '''
-               npm install
-          '''
+       steps {
+           powershell 'npm install"
+          }
    }
    stage('Build'){
-       sh '''
-             npm run build
-          '''
+       steps{
+           powershell 'npm run build'
+          }
    }
  }
