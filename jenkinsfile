@@ -4,7 +4,7 @@ node {
    }
    stage('Install node modules'){
        steps {
-           powershell 'npm install"
+           powershell 'npm install'
           }
    }
    stage('Build'){
